@@ -4,7 +4,7 @@ function randomInt(size) {
 
 function createAnswer(name) {
   var answers = [
-    'Yes.',
+    'The word on the street is that no one cares.',
     'No.',
     'Maybe..',
     'Who knows?!',
@@ -24,16 +24,15 @@ function capitalize(name) {
 
 document.addEventListener("DOMContentLoaded", function(event) {
   var person = document.location.search.substring(1);
-      nameReplaceElem = Array.from(document.getElementsByClassName('name-replace'))[0],
+      titleElem = Array.from(document.getElementsByClassName('title'))[0],
       answerElem = Array.from(document.getElementsByClassName('answer'))[0];
 
   if (!person) {
     person = 'Trump';
   }
 
-  person = capitalize(person);
-
   document.title = 'is ' + person + ' still alive?';
 
-  answerElem.innerHTML = createAnswer(person);
+  titleElem.innerHTML = 'is ' + person + ' still alive?';
+  answerElem.innerHTML = createAnswer(capitalize(person));
 });
