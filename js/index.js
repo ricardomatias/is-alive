@@ -10,9 +10,10 @@ function createAnswer(name) {
     'Who knows?!',
     name.substring(0, 4) + '-who??',
     'I hope so, ' + name + ' still owes me money.',
-    'Who cares about ' + name + '? Trump is the best.',
+    'Who cares about ' + name + '? Trump is president.',
     'I wish penguins could fly.',
-    'Never liked ' + name + '.'
+    'Never liked ' + name + '.',
+    'Hopefully.. but what about Trump?'
   ];
 
   return answers[randomInt(answers.length - 1)];
