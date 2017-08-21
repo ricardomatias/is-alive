@@ -13,7 +13,8 @@ function createAnswer(name) {
     'Who cares about ' + name + '? Trump is president.',
     'I wish penguins could fly.',
     'Never liked ' + name + '.',
-    'Hopefully.. but what about Trump?'
+    'Hopefully.. but what about Trump?',
+    'I heard that most penguins are monogamous.'
   ];
 
   return answers[randomInt(answers.length - 1)];
