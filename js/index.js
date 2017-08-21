@@ -30,11 +30,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
       answerElem = Array.from(document.getElementsByClassName('answer'))[0];
 
   if (!person) {
-    person = 'Trump';
+    person = 'the muffin man';
   }
 
-  document.title = 'is ' + person + ' still alive?';
+  var title = 'is ' + person + ' still alive?';
 
-  titleElem.innerHTML = 'is ' + person + ' still alive?';
+  document.title = title;
+  document.querySelector('meta[name="description"]').setAttribute("content", title);
+
+  titleElem.innerHTML = title;
   answerElem.innerHTML = createAnswer(capitalize(person));
 });
