@@ -41,4 +41,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   titleElem.innerHTML = title;
   answerElem.innerHTML = createAnswer(capitalize(person));
+
+  document.addEventListener('click', function(event) {
+    answerElem.innerHTML = createAnswer(capitalize(person));
+  });
+
+  document.addEventListener('touchstart', function(event) {
+    answerElem.innerHTML = createAnswer(capitalize(person));
+  });
 });
