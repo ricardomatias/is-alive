@@ -7,14 +7,15 @@ function createAnswer(name) {
     'The word on the street is that no one cares.',
     'No.',
     'Maybe..',
-    'Who knows?!',
     name.substring(0, 4) + '-who??',
     'I hope so, ' + name + ' still owes me money.',
     'Who cares about ' + name + '? Trump is president.',
     'I wish penguins could fly.',
     'Never liked ' + name + '.',
     'Hopefully.. but what about Trump?',
-    'I heard that most penguins are monogamous.'
+    'I heard that most penguins are monogamous.',
+    'Probably not, she drank too much tea.',
+    'Is it Wednesday? Then I don\'t care.'
   ];
 
   return answers[randomInt(answers.length - 1)];
